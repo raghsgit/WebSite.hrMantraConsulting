@@ -37,6 +37,17 @@
    
     <style>
         
+        .header{
+            background-color:#ff6600;
+            opacity:.6;
+            
+           
+        }
+        #jssor_1{
+            border-top:4px solid #b34700;
+             box-shadow:inset 0px 4px rgba(204, 82, 00);
+        }
+        
         .jssora02l, .jssora02r {
             display: block;
             position: absolute;
@@ -44,7 +55,7 @@
             width: 55px;
             height: 55px;
             cursor: pointer;
-            background: url('img/a02.png') no-repeat;
+            /* background: url('img/a02.png') no-repeat;-->*/
             overflow: hidden;
         }
         .jssora02l { background-position: -3px -33px; }
@@ -60,12 +71,12 @@
 </head>
 <body>
 <!-- Banner -->
-    <div style="background-image:url('images/banner.jpg')"> 
+    <div class="outer" style="background-image:url('images/banner.jpg')"> 
     
 	
 		<!-- Header -->
 	<div class="header" >
-		<div class="container">
+		<div class="container" >
 		<!-- Navbar -->
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
@@ -118,8 +129,7 @@
 
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            /*responsive code begin*/
-            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+          
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
               if (refSize) {
@@ -130,7 +140,7 @@
                     window.setTimeout(ScaleSlider, 30);
                 }
             }
-             //jssor_1_slider.$ScaleWidth(refSize);
+           
             ScaleSlider();
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
@@ -140,32 +150,27 @@
     </script>
     
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
+        
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="img/i1.JPG" />
-            </div>
+           
             <div>
                
-                <img data-u="image" src="img/i2.JPG" />
+                <img data-u="image" src="img/i2.jpg" />
            
             </div>
             <div>
-               <img data-u="image" src="img/i3.JPG" />
+               <img data-u="image" src="img/i3.jpg" />
             </div>
             <div>
-               <img data-u="image" src="img/i4.JPG" />
+               <img data-u="image" src="img/i4.jpg" />
             </div>
              <div>
-               <img data-u="image" src="img/i5.JPG" />
+               <img data-u="image" src="img/i5.jpg" />
             </div>
              <div>
-               <img data-u="image" src="img/i6.JPG" />
+               <img data-u="image" src="img/i6.jpg" />
             </div>
+             
             
         </div>
         <!-- Thumbnail Navigator -->
@@ -187,14 +192,7 @@
         <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
-    <!-- #endregion Jssor Slider End -->
    
-	<!-- //Header -->
-		<!-- //Banner -->
-		<!-- agile>
-   
-	
-		<!-- w3l -->
 	<div class="w3l">
 	<div class="container">		
 		<div class="row">
@@ -295,13 +293,12 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 					
 				</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid address animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
-					<h4>ADDRESS</h4>
+					<h4>GETTING IN TOUCH</h4>
 					<address>
 						<ul>
-							<li>Quis autem vel</li>
-							<li>Sydney, Delhi</li>
-							<li>Telephone : +2 (354) 456-78950</li>
-							<li>Email : <a class="mail" href="mailto:mail@example.com">info@example.com</a></li>
+							<li>Anshumal Dikshit</li>
+							<li>Telephone : +91 - 9810452580,8586984190</li>
+							<li>Email : <a class="mail" href="mailto:mail@example.com">anshumaldikshit@yahoo.com</a></li>
 						</ul>
 					</address>
 				</div>
