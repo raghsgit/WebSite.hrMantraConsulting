@@ -1,11 +1,13 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Consultant delhi</title>
+<title>Consultant</title>
 <!-- For-Mobile-Apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //For-Mobile-Apps -->
 <!-- Custom-Stylesheet-Links -->
@@ -13,7 +15,6 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-	
 <!-- //Custom-Stylesheet-Links -->
 <!-- Web-Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
@@ -22,15 +23,14 @@
 <!-- //Web-Fonts -->
  <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!--gallery-->
-<!--JS for animate-->
-	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-	<script src="js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-	<!--//end-animate-->
+
     <style>
+        .submit:hover{
+            border:2 px solid #ff8000;
+            background-color:"white";
+            color:#ff8000;
+        }
+       
     .header{
             background-color:#ff6600;
             opacity:.6;
@@ -42,12 +42,10 @@
              box-shadow:inset 0px 4px rgba(204, 82, 00);
         }
     </style>
-  
 </head>
 <body>
-
-	 <div style="background-image:url('images/banner.jpg')"> 
-        
+<!-- Banner -->
+	<div style="background-image:url('images/banner.jpg')"> 
 		<!-- Header -->
 	<div class="header">
 		<div class="container">
@@ -69,9 +67,9 @@
 					<ul>
 						<li><a href="index.html" ><span data-hover="HOME">HOME</span></a></li>
 						<li><a href="coreteam.html"><span data-hover="TEAM">TEAM</span></a></li>
-						<li><a href="services.html" class="active">SERVICES</a></li>
+						<li><a href="services.html"><span data-hover="SERVICE">SERVICES</span></a></li>
                         <li><a href="blog.html"><span data-hover="BLOG">BLOG</span></a></li>
-						<li><a href="contact.php"><span data-hover="CONTACT" class="active">CONTACT</span></a></li>
+						<li><a href="contact.php" class="active">CONTACT</a></li>
                       
 					</ul>
 				</div>
@@ -80,85 +78,52 @@
 		</nav>
 		<!-- //Navbar -->
 		
-	</div >
 	</div>
-
+	</div>
+      
+	<!-- //Header -->
     </div>
-  
-       <!-- //w3l -->
-    <div class="wthree" style="background-color:#fff">
+		<!-- //Banner -->
+		<!-- contact -->
+	<div class="contact wthree-2">
 		<div class="container">
-			<h3>Our Services</h3>
-			<div class="services-grids">
-				<div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h3 style="font-size:2em">Leadership development</h3>
-                    <blockquote>
-                        <ul style="list-style-type:none">
-                            <li>Coaching / Counseling </li>
-                            <li>Story telling / experience sharing</li>
-                            <li>Career transition dialogues </li>
-                            <li>Image building for Senior roles</li></ul>
-                    </blockquote>
-
-					
-					<div class="clearfix"> </div>
-				</div>
-                <div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h3 style="font-size:2em">HR Advisory & Consulting</h3>
-                    <blockquote>
-                        <ul style="list-style-type:none">
-                            
-                            <li>Organization design </li>
-                            <li>Job Banding</li>
-                            <li>Assessment / Development centers</li>
-                            <li>Team and role re-structuring </li>
-                            <li>Process, Systems and policies in HR</li>
-                            <li>Culture building </li>
-                            <li>HR Audits</li>
-                            </ul>
-                    </blockquote>
-
-					
-					<div class="clearfix"> </div>
-				</div>
-            </div>
-            <div class="services-grids">
-				<div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h3 style="font-size:2em">Trainings </h3>
-                    <blockquote>
-                        <ul style="list-style-type:none">
-                            <li>Workers Development Programme </li>
-<li>Supervisory Development Skills </li>
-<li>First Time Manager  </li>
-<li>Communication & Presentation Skills </li>
-<li>Body Language</li>
-<li>Becoming an Effective HR Team </li>
-<li>Interviewing Skills for Managers </li>
-<li>Performance Management</li>
-<li>Art of Giving Feedback </li>
-<li>Working in Teams</li>
-<li>Corporate Ethics </li>
-<li>Gender Sensitization </li>
-<li>Code of Conduct </li>
-<li>Prevention of Sexual Harassment </li></ul>
-                    </blockquote>
-
-					
-					<div class="clearfix"> </div>
-				</div>
-                <div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
-                   
-					
-					<div class="clearfix"> </div>
-				</div>
-            </div>
 			
+                <div class="container" style="text-align:center">
+                    <blockquote class="wow fadeInRight animated" data-wow-delay=".3s" style="text-indent:10px">  For any queries on how we can help your people and organisasion grow<br/>Please connect with:</blockquote> <br/>
+                </div>
+           
+			
+			<div class="contact-form">
+				<div class="col-md-4 contact-form-left agile-3">
+					<h2>Address :</h2>
+					<p>Eiusmod Tempor inc</p>
+					<p>Anshumal Dikshit</p>
+				    <p>Telephone : +91 - 9810452580,<br/>8586984190</p>
+					<a href="anshumaldikshit@yahoo.com">anshumaldikshit@yahoo.com</a>
+				</div>
+				<div class="col-md-8 contact-form-right  agileits-3">
+					<h3>Getting in Touch:<br/><small style="font-size:13px"><font color=red>All fields are required&nbsp;<sup>*</sup></font></small></h3>
+                    
+					<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" name="contact">
+						<input type="text" name="name" placeholder="Name" pattern="[a-zA-z]{3,30}" required>
+                        <span class="error">* <?php echo $nameer;?></span>
+						<input type="email" name="email" placeholder="Email" required>
+                        <span class="error">* <?php echo $emailer;?></span>
+						<input type="text" name="phone" placeholder="Phone" pattern="\d{10}" title="eg: 9845689098" required>
+						<span class="error">* <?php echo $phoneer;?></span>
+						<textarea placeholder="Message" name="message" required=""></textarea>
+                        <span class="error">* <?php echo $messageer;?></span>
+						<input type="submit" value="Submit" class="submit">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+           
+            <h1 style="font-size:2.2em;margin-top:90px;">On Map</h1> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6632.248000703498!2d151.265683!3d-33.7832959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abc7edcbeb07%3A0x5017d681632bfc0!2sManly+Vale+NSW+2093%2C+Australia!5e0!3m2!1sen!2sin!4v1433329298259" style="border:0"></iframe>
 		</div>
 	</div>
-   
-
-
-	<!-- Footer -->
+	<!-- //contact -->
 	<!-- Footer -->
 	<div class="footer">
 		<div class="container">
@@ -201,7 +166,19 @@
          
 	</div> 
      
-    <!-- //Footer -->
-    
+	<!-- //Footer -->
 	</body>
 	</html>
+<?php
+    $name=$message=$phone=$email="";
+    if($_SERVER["REQUEST_METHOD"]=='POST'){
+        $name=contact($_POST["name"]);
+        $phone=contact($_POST["phone"]);
+        $email=contact($_POST["email"]);
+        $message=contact($_POST["message"]);
+        function test_input($data) {
+            $data = trim($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+    ?>
