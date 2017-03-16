@@ -96,8 +96,8 @@
 			<div class="contact-form">
 				<div class="col-md-4 contact-form-left agile-3">
 					<h2>Address :</h2>
-					<p>Eiusmod Tempor inc</p>
-					<p>Anshumal Dikshit</p>
+					<p>C1/571</p>
+					<p> Palam Vihar, Gurgaon <br/>(Haryana) India - 122017</p>
 				    <p>Telephone : +91 - 9810452580,<br/>8586984190</p>
 					<a href="anshumaldikshit@yahoo.com">anshumaldikshit@yahoo.com</a>
 				</div>
@@ -129,6 +129,11 @@
 		<div class="container">
 
 			<div class="footer-info">
+			<div class="col-md-4 col-sm-4 footer-info-grid social wow fadeInRight animated" data-wow-delay=".5s">
+					<div style="background-color: #fff;margin-top: 20px">
+					<img src="images/logo5" style="min-height:250px" />
+					</div>
+			</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid newsletter wow fadeInLeft animated" data-wow-delay=".5s">
                     <a href="index.html"><h4 style="font-size:1em"><i class="fa fa-arrow-right fa-x"></i>&nbsp;HOME</h4></a>
                     <a href="coreteam.html"><h4 style="font-size:1em"><i class="fa fa-arrow-right fa-x"></i>&nbsp;CORE TEAM</h4></a>
@@ -147,14 +152,7 @@
 					</address>
 				</div>
 			
-				<div class="col-md-4 col-sm-4 footer-info-grid social wow fadeInRight animated" data-wow-delay=".5s">
-					<h4>Follow Us</h4>
-					<ul>
-						<li><a href="#"><span class="fa"> </span></a></li>
-						<li><a href="#"><span class="tw"> </span></a></li>
-						<li><a href="#"><span class="g"> </span></a></li>
-					</ul>
-				</div>
+				
 				<div class="clearfix"></div>
 			</div>
 
