@@ -92,32 +92,46 @@
    
    
     <style>
+    #jssor_1{
+    	max-height:480px;
+    }
+    .outer{
+    	position: absolute;
+    	top:10px;
+    	right:05px;
+    	z-index:2000;
+    }
+    .fix{
+    	position:fixed;
+    	top:10px;
+    	right:05px;
+    	z-index:2000;
+    }
     .bd{
+    	background-color: white;
+    	/*background-image:repeating-linear-gradient(
+    	 -55deg,
+    	 #00f,
+    	#00f 3px,
+    	 #4d94ff 3px,
+    	 #4d94ff 6px );
     	
-    	background-image:repeating-linear-gradient{
-    	 45deg,
-    	 blue ,
-    	 blue 1px,
-    	 white 1px,
-    	 white 2px };
+    }*/
+    background-image: url("images/banner2.jpg");
+}
+  .header,.navbar,.outer{
+  	background:none !important;
+  }
     	
-    }
-    #box{
-    	
-    	background:url('images/pr.jpg');
-    	
-    }
+    
     body{
-    	background-color:#d4d4d4;
+    	background-color:#fff;
     }
     
         
-        .header{
-            background-color:#ff6600;
-            opacity:.6;
+        
             
-           
-        }
+      
        .jssorb13 {
             position: absolute;
         }
@@ -134,13 +148,60 @@
         .jssorb13 div:hover, .jssorb13 .av:hover { background-position: -35px -5px; }
         .jssorb13 .av { background-position: -65px -5px; }
         .jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
+        .header{
+        	background-color:white;}
+        .dec {
+        	padding:7px;
+        	background-color:#222;
+        	border-right:2px solid #222;
+        	margin-right:2px;
+        }
     </style>
 </head>
 <body>
 
+<div style="background-color: white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<img src="images/logo" style="max-height:150px;margin-top:10px;" />
+			</div>
+			<div class="col-md-5 ">
+			<div style="margin-top:64px;float:right;padding:45px">
+				<i class="fa fa-linkedin fa-2x"></i>
+				<i class="fa fa-facebook fa-2x" style="margin-left: 15px; "></i>
+				<i class="fa fa-google fa-2x" style="margin-left: 15px; "></i>
+			</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<hr style="border:2px solid #999;box-shadow:5px 5px 5px #ccc;width:90%">
 <!-- Banner -->
 <div class="con"> 
-    <div class="outer" style="background-image:url('images/banner.jpg')"> 
+    <!--outer.start-->
+    <!--//outer.end-->
+    <script>
+			$(document).ready(function() {
+				 var navoffeset=$(".outer").offset().top;
+				 $(window).scroll(function(){
+					var scrollpos=$(window).scrollTop(); 
+					if(scrollpos >=navoffeset){
+						$(".outer").addClass("fix");
+					}else{
+						$(".outer").removeClass("fix");
+					}
+				 });
+				 
+			});
+			</script>
+     
+    <!--//slider starts here-->
+
+<div class="bd">
+		 <!--out-->
+    <div class="outer" > 
     
 	
 		<!-- Header -->
@@ -151,23 +212,22 @@
 			<div class="container-fluid">
 
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" style="border-color:navy !important">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="icon-bar" style="background-color:navy !important;"></span>
+						<span class="icon-bar" style="background-color:navy !important;"></span>
+						<span class="icon-bar" style="background-color:navy !important;"></span>
 					</button>
-                    <!--a href="index.html" ><img src="images/logo" style="max-width:90px;"></a-->
-					
+                    
 				</div>
 
 				<div class="navbar-collapse collapse hover-effect wow fadeInRight animated" data-wow-delay=".5s" id="navbar">
 					<ul>
-						<li><a href="index.html" class="active">HOME</a></li>
-						<li><a href="coreteam.html"><span data-hover="TEAM" class="scrollsec">TEAM</span></a></li>
-						<li><a href="services.html"><span data-hover="SERVICE">SERVICES</span></a></li>
-						<li><a href="blog.html"><span data-hover="BLOG">BLOG</span></a></li>
-						<li><a href="contact.php"><span data-hover="CONTACT">CONTACT</span></a></li>
+						<li class="dec"><a href="index.html" class="active"><i class="fa fa-home"></i></a></li>
+						<li class="dec"><a href="coreteam.html"><span data-hover="TEAM" class="scrollsec">TEAM</span></a></li>
+						<li class="dec"><a href="services.html"><span data-hover="SERVICE">SERVICES</span></a></li>
+						<li class="dec"><a href="blog.html"><span data-hover="BLOG">BLOG</span></a></li>
+						<li class="dec"><a href="contact.php"><span data-hover="CONTACT">CONTACT</span></a></li>
                       
 					</ul>
 				</div>
@@ -179,12 +239,9 @@
 	</div>
 	</div>
     </div>
-     
-    <!--//slider starts here-->
-
-<div class="bd">
-
+    <!--out.end-->
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:400px;overflow:hidden;visibility:hidden;">
+   
         
         <div data-u="slides" style="cursor:default;position:relative;top:-75px;left:0px;width:600px;height:500px;overflow:hidden;">
             <div>
@@ -210,7 +267,7 @@
            
         </div>
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb13" style="bottom:56px;right:16px;" data-autocenter="1">
+        <div data-u="navigator" class="jssorb13" style="bottom:86px;right:16px;" data-autocenter="1">
             <!-- bullet navigator item prototype -->
             <div data-u="prototype" style="width:21px;height:21px;"></div>
         </div>
@@ -226,7 +283,7 @@
 	<div class="container">		
 		<div class="row">
 			<div class="col-sm-12 text-center w3ls">
-				<h3>Welcome</h3>
+				<h3>HR Consulting</h3>
 				<p class="p1 animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="text-indent: 0;text-align: left">Modern times are indeed interesting times  - as  the global order transforms , it  has necessitated changes across industry as well.  As organisations grow or transform , material, technology and capital requirements also change  and this is driven through human resources  associated with the enterprise. <br/>
 
 The question often asked is are the people capable enough to embrace the  change, execute it and become change champions? Do they possess the required skills to perform effectively in organisations?<br/>
@@ -242,29 +299,33 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 <!-- //w3l -->
     <div class="wthree" style="background-color:#fff">
 		<div class="container">
-			<h3>Our Services</h3>
-			<div class="services-grids">
-				<div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
+			<h3 >Our Services</h3>
+			<div class="clearfix"> 
+			<div class="services-grids" >
+				<div class="services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
 					<div class="col-xs-4 services-grid-left1">
 						<i class="hovicon effect-2 sub-a"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span></i>
 					</div>
 					<div class="col-xs-8 services-grid-left2">
 						<h4>Leadership development</h4>
 						<p>Learn Leadership Skills of our the best leader</p>
-                        <ul style="list-style-type:disc;opacity:.8;color:#444">
+                        <ul style="list-style-type:disc;opacity:.8;color:#444;text-align: left">
                             <li>Coaching / Counseling</li>
                         <li>Story telling / experience sharing&nbsp;and more..</li></ul>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-6 services-grid-right wow fadeInRight animated" data-wow-delay=".5s">
+				<div class="clearfix"></div>
+				<br/>
+				<br/>
+				<div class=" services-grid-right wow fadeInRight animated" data-wow-delay=".5s">
 					<div class="col-xs-4 services-grid-left1">
 						<i class="hovicon effect-2 sub-a"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span></i>
 					</div>
 					<div class="col-xs-8 services-grid-left2">
 						<h4>HR Advisory & Consulting</h4>
 						<p></p>
-                  <ul style="list-style:type:disc;opacity:.8;color:#444">
+                  <ul style="list-style:type:disc;opacity:.8;color:#444;text-align: left">
                             <li>Organization design </li>
                             <li>Job Banding </li>
                             <li>Culture building &nbsp;and more... </li>
@@ -273,18 +334,20 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 					<div class="clearfix"> </div>
 				</div>
 				<div class="clearfix"> </div>
+				<br/>
+				<br/>
 			</div>
 			<div class="services-grids">
 			<div class="col-mod-3 clearfix">
 			</div>
-				<div class="col-md-6 services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
+				<div class=" services-grid-left wow fadeInLeft animated" data-wow-delay=".5s">
 					<div class="col-xs-4 services-grid-left1">
 						<i class="hovicon effect-2 sub-a"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span></i>
 					</div>
 					<div class="col-xs-8 services-grid-left2">
 						<h4>Trainings </h4>
                         <p></p>
-                        <ul style="list-style:type:disc;opacity:.8;color:#444">
+                        <ul style="list-style:type:disc;opacity:.8;color:#444;text-align: left">
                             <li>Workers Development Programme</li>
                             <li>Body Language</li>
                             <li>Supervisory Development Skills &nbsp;and more....</li>
@@ -296,11 +359,14 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 				
 				
 				<div class="clearfix"> </div>
+				<br/>
+				<br/>
+				<br/>
 			</div>
 		</div>
 	</div>
    
-
+</div>
 
 	<!-- Footer -->
 	<div class="footer">
@@ -308,8 +374,8 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 
 			<div class="footer-info">
 			<div class="col-md-4 col-sm-4 footer-info-grid social wow fadeInRight animated" data-wow-delay=".5s">
-					<div style="background-color: #fff;margin-top: 20px">
-					<img src="images/logo5" style="min-height:250px" />
+					<div style="background-color:none;margin-top: 20px">
+					<img src="images/logo" style="min-height:250px" />
 					</div>
 			</div>
 				<div class="col-md-4 col-sm-4 footer-info-grid newsletter wow fadeInLeft animated" data-wow-delay=".5s">
@@ -342,7 +408,6 @@ HR Mantra Consulting has been set up with the intent of creating and improving p
 		</div>
          
 	</div> 
-     
-</div>
+
 	</body>
 	</html>
